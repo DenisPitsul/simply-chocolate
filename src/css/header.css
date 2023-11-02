@@ -1,21 +1,108 @@
-.header {
-  padding: 20px 0;
+.header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav {
+    display: flex;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    color: var(--black-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.54px;
+    margin-top: 25px;
+    margin-bottom: 19px;
+}
+.header-logo-first {
+    font-style: italic;
+}
+.header-logo-icon {
+    margin-left: 4px;
+}
+.header-menu {
+    display: none;
+    gap: 24px;
+    align-items: center;
+    margin-left: 188px;
+    margin-right: 137px;
+}
+.header-menu-item {
+}
+.header-menu-link {
+    color: var(--black-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.28px;
+    padding-top: 28px;
+    padding-bottom: 36px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-menu-link:hover,
+.header-menu-link:focus {
+    color: var(--accent-color);
+}
+.header-address {
+}
+.header-contact-list {
+    display: none;
+    gap: 18px;
+}
+.header-contact-item {
+}
+.header-contact-link {
+}
+.social-contact-icon {
+    stroke: var(--black-color);
+    fill: transparent;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-contact-link:hover .social-contact-icon,
+.header-contact-link:focus .social-contact-icon {
+    stroke: var(--accent-color);
+}
+.mobile-menu-btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+.mobile-menu-icon {
+    width: 32px;
+    height: 32px;
+    stroke: var(--black-color);
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+@media (min-width: 768px) {
+    .header-logo {
+        margin-top: 31px;
+        margin-bottom: 31px;
+    }
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+@media (min-width: 1200px) {
+    .header-logo {
+        font-size: 18px;
+        margin-top: 26px;
+        margin-bottom: 34px;
+    }
+    .header-menu {
+        display: flex;
+    }
+    .mobile-menu-btn {
+        display: none;
+    }
+    .header-contact-list {
+        display: flex;
+    }
 }

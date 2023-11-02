@@ -1,0 +1,303 @@
+.buy-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    opacity: 1;
+    pointer-events: initial;
+    visibility: visible;
+    z-index: 3;
+    overflow-y: auto;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buy-backdrop.buy-backdrop-is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+.buy-modal {
+    width: 311px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%) scale(1);
+    background-color: var(--dark-white-color);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 32px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buy-backdrop.buy-backdrop.buy-backdrop-is-hidden .buy-modal {
+    transform: translate(-50%, -50%) scale(0.5);
+}
+.buy-modal-close-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+}
+.buy-modal-close-icon {
+    stroke: var(--black-color);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buy-modal-close-btn:hover .buy-modal-close-icon,
+.buy-modal-close-btn:focus .buy-modal-close-icon {
+    stroke: var(--accent-color);
+}
+.buy-modal-title {
+    color: var(--black-color);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.buy-modal-title-accent {
+    color: var(--accent-color);
+}
+.buy-modal-order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.buy-modal-order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background-color: var(--white-color);
+    padding: 8px 16px;
+}
+.buy-modal-order-image {
+}
+.buy-modal-order-weight {
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background-color: var(--dark-white-color);
+    color: var(--black-color);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    padding: 6px 16px;
+}
+.buy-modal-form {
+    margin-top: 32px;
+}
+.buy-modal-form-contact-group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.buy-modal-form-contact-label {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -0.24px;
+    margin-bottom: 8px;
+}
+.buy-modal-form-input {
+    width: 100%;
+    color: var(--black-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    border-radius: 8px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+    padding: 14px 18px;
+}
+.telephone {
+    padding-left: 105px;
+}
+
+.buy-modal-form-input::placeholder {
+    color: rgba(64, 64, 64, 0.30);;
+}
+.buy-modal-form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.buy-modal-form-label {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -0.24px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+.buy-modal-flag-code {
+    position: absolute;
+    left: 18px;
+    top: 55px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.buy-modal-flag-code::after {
+    position: absolute;
+    top: 0;
+    left: 76px;
+    content: '';
+    width: 1.5px;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.05);
+}
+.buy-modal-flag-icon {
+}
+.buy-modal-code {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+}
+.buy-modal-mastercard-icon {
+    position: absolute;
+    top: 57px;
+    right: 18px;
+}
+.buy-modal-form-text-area {
+    width: 100%;
+    height: 91px;
+    color: var(--black-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    border-radius: 8px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+    padding: 14px 18px;
+    resize: none;
+    margin-bottom: 18px;
+}
+.buy-modal-form-text-area::placeholder {
+    color: rgba(64, 64, 64, 0.30);
+}
+.buy-modal-form-btn {
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 100px;
+    background: var(--accent-color);
+    padding: 12px 28px;
+    border: none;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-modal-btn:hover,
+.review-modal-btn:focus {
+    background-color: var(--button-bg-hover);
+    color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+    .buy-modal {
+        width: 609px;
+        padding: 48px;
+    }
+    .buy-modal-close-btn {
+        position: absolute;
+        top: 24px;
+        right: 28px;
+        width: 28px;
+        height: 28px;
+        padding: 6px;
+        background-color: transparent;
+        border: none;
+    }
+    .buy-modal-close-btn {
+        width: 16px;
+        height: 16px;
+    }
+    .buy-modal-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .buy-modal-order-list {
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+    .buy-modal-order-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        padding: 20px;
+    }
+    .buy-modal-order-weight {
+        padding: 8px 27px;
+    }
+    .buy-modal-form {
+        margin-top: 40px;
+    }
+    .buy-modal-form-contact-group {
+        display: flex;
+        flex-direction: row;
+        gap: 21px;
+    }
+    .buy-modal-form-contact-label {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .buy-modal-form-input {
+        font-size: 18px;
+        padding: 22px 24px;
+    }
+    .telephone {
+        padding-left: 165px;
+    }
+    .buy-modal-flag-code {
+        top: 62px;
+        left: 24px;
+        gap: 18px;
+    }
+    .buy-modal-flag-icon {
+        width: 32px;
+        height: 24px;
+    }
+    .buy-modal-code {
+        font-size: 18px;
+    }
+    .buy-modal-flag-code::after {
+        top: -4px;
+        left: 116px;
+        content: '';
+        width: 1.5px;
+        height: 33px;
+    }
+    .buy-modal-mastercard-icon {
+        top: 64px;
+        right: 24px;
+        width: 30px;
+        height: 18px;
+    }
+    .buy-modal-form-text-area {
+        font-size: 18px;
+        padding: 22px 24px;
+    }
+    .buy-modal-form-btn {
+        padding: 14px 40px;
+    }
+}

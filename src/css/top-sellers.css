@@ -1,0 +1,116 @@
+.top-sellers {
+    padding-bottom: 72px;
+}
+.top-title {
+    text-align: center;
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.top-title-accent {
+    color: var(--accent-color);
+}
+.top-card-first {
+    width: 335px;
+    margin-bottom: 20px;
+}
+.top-card-img {
+    width: 100%;
+    border-radius: 15px;
+}
+.top-text-container {
+    margin-bottom: 32px;
+    padding-right: 29px;
+}
+.top-text {
+    color: var(--black-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+.top-card-second {
+    width: 335px;
+    margin-bottom: 20px;
+}
+.top-card-third {
+    display: none;
+}
+.top-btn-container {
+    text-align: center;
+}
+.top-btn {
+    border-radius: 100px;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    padding: 12px 28px;
+    border: none;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.top-btn:hover,
+.top-btn:focus {
+    background-color: var(--button-bg-hover);
+    color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+    .top-sellers {
+        padding-bottom: 100px;
+    }
+    .top-products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .top-card-first {
+        min-width: 344px;
+        margin-bottom: 32px;
+        order: 1;
+    }
+    .top-text-container {
+        width: 316px;
+        order: 3;
+    }
+    .top-card-second {
+        min-width: 344px;
+        margin-bottom: 32px;
+        order: 2;
+    }
+    .top-btn-container {
+        order: 4;
+    }
+    .top-btn {
+        padding: 14px 40px;
+        font-size: 18px;
+    }
+}
+@media (min-width: 1200px) {
+    .top-sellers {
+        padding-bottom: 128px;
+    }
+    .top-card-first {
+        min-width: 368px;
+    }
+    .top-card-second {
+        min-width: 368px;
+    }
+    .top-card-third {
+        display: block;
+        min-width: 368px;
+        order: 3;
+    }
+    .top-text-container {
+        width: 407px;
+        order: 4;
+    }
+    .top-btn-container {
+        order: 5;
+    }
+}

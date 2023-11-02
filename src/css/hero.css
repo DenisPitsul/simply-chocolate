@@ -1,0 +1,191 @@
+.hero {
+    padding-bottom: 71px;
+}
+.hero-container {
+    background-color: var(--button-bg-color);
+    padding-top: 395px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-image: 
+        linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+        url(../images/hero/hero-mobile-1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: 
+        linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+        url(../images/hero/hero-mobile-2x.jpg);
+  }
+}
+.hero-content {
+}
+.hero-description {
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    margin-bottom: 32px;
+}
+.hero-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.hero-buttons-list {
+    display: flex;
+    gap: 14px;
+}
+.hero-button-buy {
+    background-color: var(--accent-color);
+    padding: 12px 27px;
+    border-radius: 100px;
+    border: none;
+    color: var(--white-color);
+    border: 1px solid var(--accent-color);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    margin: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button-buy:hover,
+.hero-button-buy.focus {
+    background-color: var(--button-bg-hover);
+    color: var(--accent-color);
+    border: 1px solid var(--button-bg-hover);
+}
+.hero-button-made {
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    padding: 14px 27px;
+    border-radius: 100px;
+    border: 1px solid var(--white-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button-made:hover,
+.hero-button-made.focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+.hero-button-scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    color: var(--white-color);
+    background: transparent;
+    border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+.hero-button-scroll:hover,
+.hero-button-scroll:focus {
+    color: var(--accent-color);
+}
+.hero-scroll-icon {
+    width: 28px;
+    height: 28px;
+    padding: 6px;
+    fill: var(--accent-color);
+    background-color: var(--white-color);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button-scroll:hover .hero-scroll-icon,
+.hero-button-scroll:focus .hero-scroll-icon {
+    fill: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding-bottom: 50px;
+    }
+    .hero-container {
+        padding-top: 671px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-image: 
+            linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+            url(../images/hero/hero-tablet-1x.jpg);
+        max-width: 704px;
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero-container {
+        background-image: 
+            linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+            url(../images/hero/hero-tablet-2x.jpg);
+      }
+    }
+
+    .hero-description {
+        width: 484px;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: -0.84px;
+    }
+    .hero-button-buy {
+        padding: 14px 40px;
+    }
+    .hero-button-made {
+        padding: 14px 40px;
+    }
+    .hero-button-scroll {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.42px;
+    }
+    .hero-scroll-icon {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        padding-bottom: 72px;
+    }
+    .hero-container {
+        min-width: 100%;
+        padding-top: 381px;
+        background-image: 
+            linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+            url(../images/hero/hero-descktop-1x.jpg);
+      }
+    
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero-container {
+          background-image: 
+            linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),    
+            url(../images/hero/hero-descktop-2x.jpg);
+        }
+      }
+}

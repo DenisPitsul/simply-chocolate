@@ -1,0 +1,40 @@
+<div class="review-modal-backdrop review-modal-backdrop-is-hidden" data-review-modal>
+    <div class="review-modal">
+        <button type="button" class="review-modal-close-btn" data-review-modal-close>
+            <svg class="review-modal-close-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+        </button>
+        <h2 class="review-modal-title">
+            Leave a review <br/> about <span class="review-modal-title-accent">our chocolate</span>
+        </h2>
+        <form class="review-modal-form">
+            <div class="review-modal-form-data">
+                <label>
+                    <input type="text" required min="3" max="20" placeholder="Name" class="review-modal-input" name="name">
+                </label>
+            </div>
+            <div class="review-modal-form-data">
+                <label>
+                    <input type="email" required placeholder="Enter your email" class="review-modal-input" name="name">
+                </label>
+            </div>
+            <div class="review-modal-form-data">
+                <div class="review-modal-flag-code">
+                    <svg class="review-modal-flag-icon" width="24" height="18">
+                        <use href="./images/icons.svg#flag-icon"></use>
+                    </svg>
+                    <p class="review-modal-code">+380</p>
+                </div>
+                <label>
+                    <input type="tel" required placeholder="Phone number" class="review-modal-tel-input" name="name">
+                </label>
+            </div>
+            <div class="review-modal-form-data">
+                <label for="text"></label>
+                <textarea id="text" type="tel" placeholder="Enter text" class="review-modal-text-area" name="text"></textarea>
+            </div>
+            <button type="submit" class="review-modal-btn">Send</button>
+        </form>
+    </div>
+</div>

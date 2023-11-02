@@ -1,0 +1,75 @@
+:root {
+  --black-color: #111111;
+  --violet-color: #1e1823;
+  --accent-color: #fd9222;
+  --dark-white-color: #fafafa;
+  --white-color: #ffffff;
+  --button-bg-hover: #fcf1e0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+body {
+  font-family: 'Montserrat';
+  color: var(--black-color);
+  background-color: var(--dark-white-color);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (min-width: 375px) {
+    .container {
+        width: 375px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}

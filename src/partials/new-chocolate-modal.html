@@ -1,0 +1,40 @@
+<div class="new-chocolate-modal-backdrop new-chocolate-modal-backdrop-is-hidden" data-new-chocolate-modal>
+    <div class="new-chocolate-modal">
+        <picture>
+            <source 
+                srcset="
+                    ./images/new-chocolate/new-chocolate-desk-tablet-1x.jpg 1x,
+                    ./images/new-chocolate/new-chocolate-desk-tablet-2x.jpg 2x
+                " 
+                media="(min-width: 768px)"
+            />
+            <source 
+                srcset="
+                    ./images/new-chocolate/new-chocolate-mobile-1x.jpg 1x,
+                    ./images/new-chocolate/new-chocolate-mobile-2x.jpg 2x
+                " 
+                media="(min-width: 375px)"
+            />
+            <img 
+                class="new-chocoltae-modal-image"
+                srcset="./images/new-chocolate/new-chocolate-mobile-2x.jpg" 
+                src="./images/new-chocolate/new-chocolate-mobile-1x.jpg" 
+                alt="new chocolate"
+            />
+        </picture>
+        <button class="new-chocolate-modal-close-btn" data-new-chocolate-modal-close>
+            <svg class="new-chocolate-modal-close-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+        </button>
+        <div class="new-chocolate-modal-content">
+            <h2 class="new-chocolate-modal-title">
+                Explore our <br> <span class="new-chocolate-modal-title-accent">new chocolate</span> first!
+            </h2>
+            <form class="new-chocolate-modal-form">
+                <input required type="email" class="new-chocolate-modal-input" placeholder="Enter your email">
+                <button type="submit" class="new-chocolate-modal-subscribe-button">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</div>
